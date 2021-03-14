@@ -100,7 +100,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="optionconstraints.html#depthfactor" class="tsd-kind-icon">depth<wbr>Factor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="optionconstraints.html#depthidentifier" class="tsd-kind-icon">depth<wbr>Identifier</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="optionconstraints.html#freq" class="tsd-kind-icon">freq</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="optionconstraints.html#maxdepth" class="tsd-kind-icon">max<wbr>Depth</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="optionconstraints.html#nil" class="tsd-kind-icon">nil</a></li>
 							</ul>
 						</section>
@@ -110,12 +113,56 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="depthfactor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> depth<wbr>Factor</h3>
+					<div class="tsd-signature tsd-kind-icon">depth<wbr>Factor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6cd6467/src/check/arbitrary/OptionArbitrary.ts#L30">src/check/arbitrary/OptionArbitrary.ts:30</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>While going deeper and deeper within a recursive structure (see <a href="../index.html#letrec">letrec</a>),
+							this factor will be used to increase the probability to generate nil.</p>
+						</div>
+						<p>Example of values: 0.1 (small impact as depth increases), 0.5, 1 (huge impact as depth increases).</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 2.14.0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="depthidentifier" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> depth<wbr>Identifier</h3>
+					<div class="tsd-signature tsd-kind-icon">depth<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6cd6467/src/check/arbitrary/OptionArbitrary.ts#L45">src/check/arbitrary/OptionArbitrary.ts:45</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Depth identifier can be used to share the current depth between several instances.</p>
+						</div>
+						<p>By default, if not specified, each instance of option will have its own depth.
+						In other words: you can have depth=1 in one while you have depth=100 in another one.</p>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 2.14.0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="freq" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> freq</h3>
 					<div class="tsd-signature tsd-kind-icon">freq<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/dd7e4cf/src/check/arbitrary/OptionArbitrary.ts#L15">src/check/arbitrary/OptionArbitrary.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6cd6467/src/check/arbitrary/OptionArbitrary.ts#L16">src/check/arbitrary/OptionArbitrary.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -130,12 +177,32 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxdepth" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Depth</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6cd6467/src/check/arbitrary/OptionArbitrary.ts#L36">src/check/arbitrary/OptionArbitrary.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Maximal authorized depth. Once this depth has been reached only nil will be used.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>remarks</dt>
+							<dd><p>Since 2.14.0</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="nil" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> nil</h3>
 					<div class="tsd-signature tsd-kind-icon">nil<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TNil</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/dd7e4cf/src/check/arbitrary/OptionArbitrary.ts#L20">src/check/arbitrary/OptionArbitrary.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/6cd6467/src/check/arbitrary/OptionArbitrary.ts#L21">src/check/arbitrary/OptionArbitrary.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +234,16 @@
 						<a href="optionconstraints.html" class="tsd-kind-icon">Option<wbr>Constraints</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="optionconstraints.html#depthfactor" class="tsd-kind-icon">depth<wbr>Factor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="optionconstraints.html#depthidentifier" class="tsd-kind-icon">depth<wbr>Identifier</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="optionconstraints.html#freq" class="tsd-kind-icon">freq</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="optionconstraints.html#maxdepth" class="tsd-kind-icon">max<wbr>Depth</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="optionconstraints.html#nil" class="tsd-kind-icon">nil</a>
