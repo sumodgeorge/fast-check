@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MixedCaseConstraints | API Reference | fast-check | Property based testing framework</title>
+	<title>WithCloneMethod | API Reference | fast-check | Property based testing framework</title>
 	<meta name="description" content="Documentation for API Reference | fast-check | Property based testing framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../index.html">API Reference | fast-check | Property based testing framework</a>
 				</li>
 				<li>
-					<a href="mixedcaseconstraints.html">MixedCaseConstraints</a>
+					<a href="withclonemethod.html">WithCloneMethod</a>
 				</li>
 			</ul>
-			<h1>Interface MixedCaseConstraints</h1>
+			<h1>Interface WithCloneMethod&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -68,20 +68,28 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Constraints to be applied on <a href="../index.html#mixedcase">mixedCase</a></p>
+						<p>Object instance that should be cloned from one generation/shrink to another</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>remarks</dt>
-						<dd><p>Since 1.17.0</p>
+						<dd><p>Since 2.15.0</p>
 						</dd>
 					</dl>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">MixedCaseConstraints</span>
+						<span class="target">WithCloneMethod</span>
 					</li>
 				</ul>
 			</section>
@@ -92,7 +100,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="mixedcaseconstraints.html#togglecase" class="tsd-kind-icon">toggle<wbr>Case</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="withclonemethod.html#_clonemethod_" class="tsd-kind-icon">[clone<wbr>Method]</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,40 +109,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="togglecase" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> toggle<wbr>Case</h3>
-					<div class="tsd-signature tsd-kind-icon">toggle<wbr>Case<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>rawChar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></div>
+					<a name="_clonemethod_" class="tsd-anchor"></a>
+					<h3>[clone<wbr>Method]</h3>
+					<div class="tsd-signature tsd-kind-icon">[clone<wbr>Method]<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/fbd2ebc/src/check/arbitrary/MixedCaseArbitrary.ts#L17">src/check/arbitrary/MixedCaseArbitrary.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/fbd2ebc/src/check/symbols.ts#L22">src/check/symbols.ts:22</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Transform a character to its upper and/or lower case version</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>remarks</dt>
-							<dd><p>Since 1.17.0</p>
-							</dd>
-						</dl>
-					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-interface">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>rawChar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>rawChar: <span class="tsd-signature-type">string</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -155,11 +147,11 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="mixedcaseconstraints.html" class="tsd-kind-icon">Mixed<wbr>Case<wbr>Constraints</a>
+					<li class="current tsd-kind-interface tsd-has-type-parameter">
+						<a href="withclonemethod.html" class="tsd-kind-icon">With<wbr>Clone<wbr>Method</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="mixedcaseconstraints.html#togglecase" class="tsd-kind-icon">toggle<wbr>Case</a>
+								<a href="withclonemethod.html#_clonemethod_" class="tsd-kind-icon">[clone<wbr>Method]</a>
 							</li>
 						</ul>
 					</li>
