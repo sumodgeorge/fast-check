@@ -106,7 +106,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nextarbitrary.html#cangenerate" class="tsd-kind-icon">can<wbr>Generate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nextarbitrary.html#canshrinkwithoutcontext" class="tsd-kind-icon">can<wbr>Shrink<wbr>Without<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="nextarbitrary.html#chain" class="tsd-kind-icon">chain</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="nextarbitrary.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="nextarbitrary.html#generate" class="tsd-kind-icon">generate</a></li>
@@ -145,28 +145,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="cangenerate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> can<wbr>Generate</h3>
+					<a name="canshrinkwithoutcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> can<wbr>Shrink<wbr>Without<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">can<wbr>Generate<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Shrink<wbr>Without<wbr>Context<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L41">src/check/arbitrary/definition/NextArbitrary.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L40">src/check/arbitrary/definition/NextArbitrary.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Check if a given value could have been generated
-									through this instance of arbitrary.</p>
+									<p>Check if a given value could be pass to <code>shrink</code> without providing any context.</p>
 								</div>
-								<p>In general, <code>canGenerate</code> is not designed to be called for each <code>shrink</code> but rather on very special cases.
-									Its usage most be restricted to <code>canGenerate</code> or in the rare* context of a <code>shrink</code> method being called without
-								any context. In this ill-formed case of <code>shrink</code>, <code>canGenerate</code> could be used or called if needed.</p>
+								<p>In general, <code>canShrinkWithoutContext</code> is not designed to be called for each <code>shrink</code> but rather on very special cases.
+									Its usage must be restricted to <code>canShrinkWithoutContext</code> or in the rare* contexts of a <code>shrink</code> method being called without
+								any context. In this ill-formed case of <code>shrink</code>, <code>canShrinkWithoutContext</code> could be used or called if needed.</p>
 								<p>*we fall in that case when fast-check is asked to shrink a value that has been provided manually by the user,
-								in other words: a value not coming from a call to <code>generate</code> or a normal <code>shrink</code>.</p>
+								in other words: a value not coming from a call to <code>generate</code> or a normal <code>shrink</code> with context.</p>
 								<dl class="tsd-comment-tags">
 									<dt>remarks</dt>
 									<dd><p>Since 2.15.0</p>
@@ -197,7 +196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L139">src/check/arbitrary/definition/NextArbitrary.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L138">src/check/arbitrary/definition/NextArbitrary.ts:138</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -264,7 +263,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L77">src/check/arbitrary/definition/NextArbitrary.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L76">src/check/arbitrary/definition/NextArbitrary.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,7 +324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L98">src/check/arbitrary/definition/NextArbitrary.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L97">src/check/arbitrary/definition/NextArbitrary.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L23">src/check/arbitrary/definition/NextArbitrary.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L23">src/check/arbitrary/definition/NextArbitrary.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -433,7 +432,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L121">src/check/arbitrary/definition/NextArbitrary.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L120">src/check/arbitrary/definition/NextArbitrary.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -525,7 +524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L168">src/check/arbitrary/definition/NextArbitrary.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L167">src/check/arbitrary/definition/NextArbitrary.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -552,7 +551,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L157">src/check/arbitrary/definition/NextArbitrary.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L156">src/check/arbitrary/definition/NextArbitrary.ts:156</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -586,15 +585,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/a13f175/src/check/arbitrary/definition/NextArbitrary.ts#L55">src/check/arbitrary/definition/NextArbitrary.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e64d087/src/check/arbitrary/definition/NextArbitrary.ts#L54">src/check/arbitrary/definition/NextArbitrary.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Shrink a value of type <code>T</code>, may rely on the context previously provided to shrink efficiently</p>
 								</div>
-								<p>Must never be called with possibly invalid values.
-								Consider calling <code>canGenerate</code> first if you are not sure of the origin of the value.</p>
+								<p>Must never be called with possibly invalid values and no context without ensuring that such call is legal
+								by calling <code>canShrinkWithoutContext</code> first on the value.</p>
 								<dl class="tsd-comment-tags">
 									<dt>remarks</dt>
 									<dd><p>Since 2.15.0</p>
@@ -642,7 +641,7 @@
 								<a href="nextarbitrary.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="nextarbitrary.html#cangenerate" class="tsd-kind-icon">can<wbr>Generate</a>
+								<a href="nextarbitrary.html#canshrinkwithoutcontext" class="tsd-kind-icon">can<wbr>Shrink<wbr>Without<wbr>Context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="nextarbitrary.html#chain" class="tsd-kind-icon">chain</a>
