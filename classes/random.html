@@ -111,7 +111,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="random.html#nextboolean" class="tsd-kind-icon">next<wbr>Boolean</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="random.html#nextdouble" class="tsd-kind-icon">next<wbr>Double</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="random.html#nextint" class="tsd-kind-icon">next<wbr>Int</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="random.html#uniformin" class="tsd-kind-icon">uniform<wbr>In</a></li>
 							</ul>
 						</section>
 					</div>
@@ -129,12 +128,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L16">src/random/generator/Random.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L21">src/random/generator/Random.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a mutable random number generator</p>
+									<p>Create a mutable random number generator by cloning the passed one and mutate it</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -142,7 +141,7 @@
 								<li>
 									<h5>sourceRng: <a href="../index.html#purerandom" class="tsd-signature-type" data-tsd-kind="Type alias">PureRandom</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Immutable random generator from pure-rand library, will not be altered</p>
+										<p>Immutable random generator from pure-rand library, will not be altered (a clone will be)</p>
 									</div>
 								</li>
 							</ul>
@@ -159,7 +158,7 @@
 					<div class="tsd-signature tsd-kind-icon">internal<wbr>Rng<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RandomGenerator</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L16">src/random/generator/Random.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L21">src/random/generator/Random.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">DBL_<wbr>DIVISOR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L14">src/random/generator/Random.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L19">src/random/generator/Random.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">DBL_<wbr>FACTOR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L13">src/random/generator/Random.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L18">src/random/generator/Random.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>INT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L12">src/random/generator/Random.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L17">src/random/generator/Random.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -199,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">MIN_<wbr>INT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L11">src/random/generator/Random.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L16">src/random/generator/Random.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +215,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L29">src/random/generator/Random.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L34">src/random/generator/Random.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -238,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L43">src/random/generator/Random.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L42">src/random/generator/Random.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -269,7 +268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L86">src/random/generator/Random.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L87">src/random/generator/Random.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -330,7 +329,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L75">src/random/generator/Random.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L78">src/random/generator/Random.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -367,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L51">src/random/generator/Random.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L50">src/random/generator/Random.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L98">src/random/generator/Random.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L97">src/random/generator/Random.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -412,7 +411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L58">src/random/generator/Random.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L57">src/random/generator/Random.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -425,7 +424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L65">src/random/generator/Random.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/2007287/src/random/generator/Random.ts#L64">src/random/generator/Random.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -446,32 +445,6 @@
 									<div class="tsd-comment tsd-typography">
 										<p>Maximal integer value</p>
 									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="uniformin" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> uniform<wbr>In</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">uniform<wbr>In<span class="tsd-signature-symbol">(</span>rangeMin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rangeMax<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/e472e2b/src/random/generator/Random.ts#L33">src/random/generator/Random.ts:33</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>rangeMin: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>rangeMax: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -534,9 +507,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="random.html#nextint" class="tsd-kind-icon">next<wbr>Int</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="random.html#uniformin" class="tsd-kind-icon">uniform<wbr>In</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
@@ -560,11 +530,10 @@
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
