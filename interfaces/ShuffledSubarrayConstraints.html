@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DoubleNextConstraints | API Reference | fast-check | Property based testing framework</title>
+	<title>ShuffledSubarrayConstraints | API Reference | fast-check | Property based testing framework</title>
 	<meta name="description" content="Documentation for API Reference | fast-check | Property based testing framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../index.html">API Reference | fast-check | Property based testing framework</a>
 				</li>
 				<li>
-					<a href="DoubleNextConstraints.html">DoubleNextConstraints</a>
+					<a href="ShuffledSubarrayConstraints.html">ShuffledSubarrayConstraints</a>
 				</li>
 			</ul>
-			<h1>Interface DoubleNextConstraints</h1>
+			<h1>Interface ShuffledSubarrayConstraints</h1>
 		</div>
 	</div>
 </header>
@@ -68,11 +68,11 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Constraints to be applied on {@link doubleNext}</p>
+						<p>Constraints to be applied on <a href="../index.html#shuffledSubarray">shuffledSubarray</a></p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>remarks</dt>
-						<dd><p>Since 2.8.1</p>
+						<dd><p>Since 2.18.0</p>
 						</dd>
 					</dl>
 				</div>
@@ -81,7 +81,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DoubleNextConstraints</span>
+						<span class="target">ShuffledSubarrayConstraints</span>
 					</li>
 				</ul>
 			</section>
@@ -92,10 +92,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="DoubleNextConstraints.html#max" class="tsd-kind-icon">max</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="DoubleNextConstraints.html#min" class="tsd-kind-icon">min</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="DoubleNextConstraints.html#noDefaultInfinity" class="tsd-kind-icon">no<wbr>Default<wbr>Infinity</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="DoubleNextConstraints.html#noNaN" class="tsd-kind-icon">no<wbr>NaN</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ShuffledSubarrayConstraints.html#maxLength" class="tsd-kind-icon">max<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ShuffledSubarrayConstraints.html#minLength" class="tsd-kind-icon">min<wbr>Length</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,94 +102,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="max" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max</h3>
-					<div class="tsd-signature tsd-kind-icon">max<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="maxLength" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Length</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/9725ea4/src/arbitrary/_next/doubleNext.ts#L29">src/arbitrary/_next/doubleNext.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/9725ea4/src/arbitrary/shuffledSubarray.ts#L22">src/arbitrary/shuffledSubarray.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Upper bound for the generated 64-bit floats (included)</p>
+							<p>Upper bound of the generated subarray size (included)</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>defaultvalue</dt>
-							<dd><p>Number.POSITIVE_INFINITY, 1.7976931348623157e+308 when noDefaultInfinity is true</p>
+							<dd><p>The length of the original array itself</p>
 							</dd>
 							<dt>remarks</dt>
-							<dd><p>Since 2.8.0</p>
+							<dd><p>Since 2.4.0</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="min" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> min</h3>
-					<div class="tsd-signature tsd-kind-icon">min<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="minLength" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> min<wbr>Length</h3>
+					<div class="tsd-signature tsd-kind-icon">min<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/9725ea4/src/arbitrary/_next/doubleNext.ts#L23">src/arbitrary/_next/doubleNext.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/9725ea4/src/arbitrary/shuffledSubarray.ts#L16">src/arbitrary/shuffledSubarray.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Lower bound for the generated 64-bit floats (included)</p>
+							<p>Lower bound of the generated subarray size (included)</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>defaultvalue</dt>
-							<dd><p>Number.NEGATIVE_INFINITY, -1.7976931348623157e+308 when noDefaultInfinity is true</p>
+							<dd><p>0</p>
 							</dd>
 							<dt>remarks</dt>
-							<dd><p>Since 2.8.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="noDefaultInfinity" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Default<wbr>Infinity</h3>
-					<div class="tsd-signature tsd-kind-icon">no<wbr>Default<wbr>Infinity<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/9725ea4/src/arbitrary/_next/doubleNext.ts#L36">src/arbitrary/_next/doubleNext.ts:36</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>By default, lower and upper bounds are -infinity and +infinity.
-							By setting noDefaultInfinity to true, you move those defaults to minimal and maximal finite values.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>defaultvalue</dt>
-							<dd><p>false</p>
-							</dd>
-							<dt>remarks</dt>
-							<dd><p>Since 2.8.0</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="noNaN" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>NaN</h3>
-					<div class="tsd-signature tsd-kind-icon">no<wbr>NaN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dubzzz/fast-check/blob/9725ea4/src/arbitrary/_next/doubleNext.ts#L42">src/arbitrary/_next/doubleNext.ts:42</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>When set to true, no more Number.NaN can be generated.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>defaultvalue</dt>
-							<dd><p>false</p>
-							</dd>
-							<dt>remarks</dt>
-							<dd><p>Since 2.8.0</p>
+							<dd><p>Since 2.4.0</p>
 							</dd>
 						</dl>
 					</div>
@@ -211,19 +162,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="DoubleNextConstraints.html" class="tsd-kind-icon">Double<wbr>Next<wbr>Constraints</a>
+						<a href="ShuffledSubarrayConstraints.html" class="tsd-kind-icon">Shuffled<wbr>Subarray<wbr>Constraints</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="DoubleNextConstraints.html#max" class="tsd-kind-icon">max</a>
+								<a href="ShuffledSubarrayConstraints.html#maxLength" class="tsd-kind-icon">max<wbr>Length</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="DoubleNextConstraints.html#min" class="tsd-kind-icon">min</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="DoubleNextConstraints.html#noDefaultInfinity" class="tsd-kind-icon">no<wbr>Default<wbr>Infinity</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="DoubleNextConstraints.html#noNaN" class="tsd-kind-icon">no<wbr>NaN</a>
+								<a href="ShuffledSubarrayConstraints.html#minLength" class="tsd-kind-icon">min<wbr>Length</a>
 							</li>
 						</ul>
 					</li>
